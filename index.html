@@ -3,7 +3,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/888072c8ec.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+    <title>Rock Paper Scissors</title>
   </head>
-  <body></body>
+  <body>
+    <div class="theme">
+      <button>
+        <span><i class="fas fa-duotone fa-sun"></i></span>Switch Mode
+      </button>
+    </div>
+    <div class="main_container">
+      <div class="row">
+        <h2>Rock Paper Scissors</h2>
+      </div>
+      <div class="row">
+        <div class="row score" id="player_score">
+          You - <span id="playerScore">0</span> --<span id="playerChoice"></span>
+            Choice</span
+          >
+        </div>
+        <div class="row icons" id="player_icons">
+          <i
+            class="fas fa-regular fa-hand-fist"
+            id="playerRock"
+            title="rock"
+          ></i>
+          <i class="fas fa-solid fa-hand" id="playerPaper" title="paper"></i>
+          <i
+            class="fas fa-solid fa-hand-scissors"
+            id="playerScissors"
+            title="scissors"
+          ></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row score" id="computer_score">Computer - <span id="computerScore">0</span> --<span id="computerChoice"></span>
+            Choice</span
+          ></div>
+        <div class="row icons" id="computer_icons">
+          <i
+            class="fas fa-regular fa-hand-fist"
+            id="computerRock"
+            title="rock"
+          ></i>
+          <i class="fas fa-solid fa-hand" id="computerPaper" title="paper"></i>
+          <i
+            class="fas fa-solid fa-hand-scissors"
+            id="computerScissors"
+            title="scissors"
+          ></i>
+        </div>
+      </div>
+      <div class="row">
+        <i class="fas fa-duotone fa-arrows-rotate" id="refresh"></i>
+      </div>
+    </div>
+  </body>
 </html>

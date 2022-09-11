@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;900&display=swap");
+:root {
+  --user-primary: #f2d046;
+  --computer-primary: #cc331f;
+  --neutral: #f2d046;
+  --main: whitesmoke;
+  --background: #bfcecc;
+  --refresh: black;
+}
+
+[data-theme="dark"] {
+  --user-primary: #2d4870;
+  --computer-primary: #8a1f11;
+  --neutral: rgb(54, 58, 55);
+  --main: rgb(15, 15, 15);
+  --background: #3a3a3a;
+  --refresh: rgb(112, 109, 109);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.main_container {
+  background: var(--main);
+  height: auto;
+  min-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 600;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 1rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.fas {
+  font-size: 3rem;
+}
+
+.fas {
+  color: grey;
+  cursor: pointer;
+}
+
+#player_icons .fas:hover {
+  color: var(--user-primary);
+  transform: scale(1.2);
+}
+#player_icons .fas:active {
+  color: var(--user-primary);
+  transform: scale(1.2);
+}
+
+#computer_icons .fas:hover {
+  color: var(--computer-primary);
+  transform: scale(1.2);
+}
+#refresh:hover {
+  color: black;
+}
+
+.theme {
+  position: absolute;
+  left: 45%;
+  top: 1%;
+  width: auto;
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.theme .fas {
+  font-size: 1.5rem;
+  color: black;
+}
+.theme button {
+  padding: 0 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--neutral);
+}
