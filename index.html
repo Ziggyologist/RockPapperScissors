@@ -9,6 +9,7 @@
     ></script>
     <link href="style.css" rel="stylesheet" />
     <script defer src="script.js"></script>
+    <script defer src="confetti.js"></script>
     <title>Rock Paper Scissors</title>
   </head>
   <body>
@@ -24,7 +25,7 @@
       <div class="row">
         <div class="row score" id="player_score">
           You - <span id="playerScore">0</span> --<span id="playerChoice"></span>          </span
-          >
+          ><span id="player_winner"></span>
         </div>
         <div class="row icons" id="player_icons">
           <i
@@ -42,7 +43,7 @@
       </div>
       <div class="row">
         <div class="row score" id="computer_score">Computer - <span id="computerScore">0</span> --<span id="computerChoice"></span>    </span
-          ></div>
+          > <span id="computer_winner"></span></div>
         <div class="row icons" id="computer_icons">
           <i
             class="fas fa-regular fa-hand-fist"
